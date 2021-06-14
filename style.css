@@ -7,12 +7,12 @@ body{
     
     
     background-size: cover;
-    animation: glowing 20s linear infinite;
+    animation: moving 20s linear infinite;
 /*    background-color: rgb(14, 14, 14);*/
     min-height: 100vh;
     min-width: 100vw;
 }
-@keyframes glowing {
+@keyframes moving {
     0% { background-position: 0 ; }
 /*    20% { background-position: 30% 0; }*/
     100% { background-position: 200vw ; }
