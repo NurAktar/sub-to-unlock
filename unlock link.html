@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="sec1">
+<nav>
+    <a href='unlock%20link.html'><img src="image/logo.jpg" alt="no img"></a>
+    <span><a href="unlock%20link.html">Techno Focus</a></span>
+    <div class="nav-link">
+        <ul>
+            <li><a href="unlock%20link.html">About</a></li>
+        </ul>
+    </div>
+</nav>
+
+    
+
+<div class="container">
+<form>
+<h1>hello world</h1>
+<div id="div1">
+<input id="btn" type="button" name="hi" value="Subscribe">
+    </div>
+<div id="div1">
+<input id="btn2" type="button" name="hi" value="Unlock" onclick="window.open('http://google.com','_blank');" disabled>
+    </div>
+</form>
+</div>
+    </div>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script>
+        var btn = document.getElementById('btn');
+        var btn2 = document.getElementById('btn2');
+        
+        btn.onclick = function(){
+            window.open('https://www.youtube.com/channel/UCGFFUcAJp7d8crRm7k-WmHw?sub_confirmation=1','_blank');
+            setTimeout(function(){
+                btn2.disabled=false;
+                btn2.style.background="rgb(11, 159, 11)";
+                btn2.style.cursor="pointer";
+            },11000);
+        }
+        
+    </script>
+</body>
+</html>
