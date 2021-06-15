@@ -1,69 +1,65 @@
 *{margin: 0;
-padding: 0;
-transition-duration: 1s;}
+  padding: 0;
+  transition-duration: 1s;}
 
-body{
+  body{
     background:url("image/web1.jpg");
-    
-    
     background-size: cover;
     animation: moving 20s linear infinite;
-/*    background-color: rgb(14, 14, 14);*/
+    /*    background-color: rgb(14, 14, 14);*/
     min-height: 100vh;
     min-width: 100vw;
-}
-@keyframes moving {
+  }
+
+  @keyframes moving {
     0% { background-position: 0 ; }
-/*    20% { background-position: 30% 0; }*/
+    /*    20% { background-position: 30% 0; }*/
     100% { background-position: 200vw ; }
-/*    80% {background-position: 30% 0; }*/
-/*    100% { background-position: 0 ; }*/
-}
-nav{
-    
+    /*    80% {background-position: 30% 0; }*/
+    /*    100% { background-position: 0 ; }*/
+  }
+  nav{
+    font-family: 'Ubuntu', sans-serif;
     z-index: -2;
     display: flex;
     padding: 1% 6%;
     justify-content: space-between;
     align-items: center;
     background-color: black;
-}
-
-span{
+  }
+  span{
+    font-weight:500;
     font-size: 25px;
     padding-left: 2%;
-}
-span a{
-        text-decoration: none;
-        color: aliceblue;
-}
-img{
+  }
+  span a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  img{
     width: 55px;
-}
-.nav-link{
+  }
+  .nav-link{
     flex:1;
     text-align: right;
-}
-.nav-link ul li{
+  }
+  .nav-link ul li{
     display: inline-block;
     list-style: none;
     padding: 8px 12px;
     position: relative;
-}
-.nav-link ul li a{
+  }
+  .nav-link ul li a{
     color: aliceblue;
     text-decoration: none;
     font-size: 15px;
-} 
-.container{
-/*    z-index:-1 ;*/
-    
+  }
+  .container{
+    /*    z-index:-1 ;*/
     border-radius: 9px;
     border:1px solid rgba(255, 255, 255,0.5);
     border-bottom-color: rgba(255, 255, 255, 0.16);
     border-right-color: rgba(255, 255, 255, 0.1);
-    
-    
     position: absolute;
     display: flex;
     top:50%;
@@ -76,16 +72,14 @@ img{
     background-color: ;rgba(33,33,33,0.1);
     backdrop-filter:blur(17px);
     box-shadow: 20px, 20px,50px rgba(0, 0, 0, 0.72);
-}
+  }
 
-#div1{
-    
+  #div1{
     padding-top: 20px;
     text-align: center;
-}
-
-#btn{
-/*    transition-duration: 1000ms;*/
+  }
+  #btn{
+    /*    transition-duration: 1000ms;*/
     border: none;
     cursor: pointer;
     font-size: 17px;
@@ -94,27 +88,23 @@ img{
     border-radius: 4px;
     padding: 7px 83px;
     background-color: rgb(230, 33, 23);
-
-    
-}
-@keyframes btnglow {
+  }
+  
+  @keyframes btnglow {
     0% { background-color: rgb(0, 59, 255); }
     100% { background-color: #ff0062; }
-    
-}
+  }
 
-#btn:hover{
+  #btn:hover{
     transition-duration: 350ms;
     border-radius: 19px;
     color: black;
     box-shadow: 3px 3px 9px -5px rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-}
+  }
 
-
-
-/*button2*/
-#btn2{
+  /*button2*/
+  #btn2{
     border: none;
     font-size: 17px;
     font-weight: 600;
@@ -122,60 +112,60 @@ img{
     border-radius: 4px;
     padding: 7px 113px;
     background-color: #2e2e2e;
-}
-/*
-#btn2:hover{
+  }
+  /*
+  #btn2:hover{
 
-    border: none;
-    
-    font-size: 17px;
-    font-weight: 600;
-    color: white;
-    border-radius: 4px;
-    padding: 7px 113px;
-    background-color: rgb(230, 33, 23);
+  border: none;
+
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  border-radius: 4px;
+  padding: 7px 113px;
+  background-color: rgb(230, 33, 23);
 }
 */
 
 div form h1{
-    color: aliceblue;
-    font-family: monospace;
-    font-size: 45px;
+  color: aliceblue;
+  font-family: monospace;
+  font-size: 45px;
 
 }
 
 /*
 @media(max-width:500px){
-    .container{
-        width: 1057px;
-        height: 540px;
-        padding: 50px;
-        border-radius: 55px;
+.container{
+width: 1057px;
+height: 540px;
+padding: 50px;
+border-radius: 55px;
 }
-    #div1{
-        padding-top:90px;
-    }
-    #btn{
-    font-size: 57px;
-        border-radius: 19px;
+#div1{
+padding-top:90px;
 }
-    div form h1{
-        font-size: 100px;
+#btn{
+font-size: 57px;
+border-radius: 19px;
 }
-    #btn2{
-        border-radius: 19px;
-        font-size: 57px;
+div form h1{
+font-size: 100px;
 }
-    
-    span{
-    font-size: 45px;
-    padding-left: 2%;
+#btn2{
+border-radius: 19px;
+font-size: 57px;
+}
+
+span{
+font-size: 45px;
+padding-left: 2%;
 }
 
 img{
-    width: 105px;
+width: 105px;
 }
-    
+
 .nav-link ul li a{
 color: aliceblue;
 text-decoration: none;
