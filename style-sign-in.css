@@ -5,6 +5,7 @@
 }
 
   body{
+    transition:0s;
     background:url("image/27240.jpg");
     background-size: cover;
     background-position: 0% 50%;
