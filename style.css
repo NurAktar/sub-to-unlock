@@ -3,7 +3,7 @@
   transition-duration: 1s;}
 
   body{
-    background:url("image/web1.jpg");
+    background:url("image/123.gif");
     background-size: cover;
     animation: moving 20s linear infinite;
     /*    background-color: rgb(14, 14, 14);*/
