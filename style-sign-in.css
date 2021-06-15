@@ -6,7 +6,7 @@
 
   body{
     background:url("image/27240.jpg");
-    background-size: 100vw;
+    background-size: cover;
     background-position: 0% 50%;
     min-height: 100vh;
     min-width: 100vw;
@@ -32,12 +32,12 @@
   nav:hover{
     background-color: rgb(68, 63, 0);
   }
-  span{
+  nav span{
     font-weight:500;
     font-size: 25px;
     padding-left: 2%;
   }
-  span::after{
+  nav span::after{
     content: '';
     display: block;
     width: 0%;
@@ -46,10 +46,10 @@
     transition: 1s;
     background-color:rgb(255, 222, 0) ;
   }
-  span:hover::after{
+  nav span:hover::after{
     width: 100%;
   }
-  span a{
+  nav span a{
     text-decoration: none;
     color: aliceblue;
   }
@@ -107,14 +107,25 @@
   }
 
   #div1{
-    padding-top: 20px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    padding-top: 25px;
     text-align: center;
   }
+  #div1 span{
+    transition: 0.25s;
+    pointer-events: none;
+    position: absolute;
+    display: inline-block;
+    /* top: 0;
+    left: 17px; */
+    font-size: 18px;
+    top:1.99rem;
+    left: 2rem;
+  }
   #btn{
-    /* text-align: center; */
     outline: none;
-    /*    transition-duration: 1000ms;*/
-    /* border: none; */
     font-size: 17px;
     color: white;
     font-weight: 600;
@@ -134,11 +145,13 @@
     border-radius: 5px;
     /* color: rgb(255, 84, 0); */
   }
+  #btn:focus ~ span,#btn:valid ~ span{
+    top: 0.4rem;
+    left:1rem;
+    font-size: 15px;
+  }
   #btn2{
-    /* text-align: center; */
     outline: none;
-    /*    transition-duration: 1000ms;*/
-    /* border: none; */
     font-size: 17px;
     color: white;
     font-weight: 600;
@@ -158,6 +171,20 @@
     border-radius: 5px;
     /* color: rgb(206, 97, 215); */
   }
+  #btn2:focus ~ span,#btn2:valid ~ span{
+    top: 0.4rem;
+    left: 1rem;
+    font-size: 15px;
+  }
+
+  div form h1{
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 45px;
+  }
+
+/* End here */
+
 
   /* @keyframes btnglow {
     0% { background-color: rgb(255, 255, 255); }
@@ -182,11 +209,7 @@
 }
 */
 
-div form h1{
-  color: aliceblue;
-  font-family: monospace;
-  font-size: 45px;
-}
+
 
 /*
 @media(max-width:500px){
