@@ -1,0 +1,226 @@
+*{
+  margin: 0;
+  padding: 0;
+  transition-duration: 1s;
+}
+
+  body{
+    background:url("image/27240.jpg");
+    background-size: 100%;
+    background-position: 0% 50%;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+
+  /* @keyframes moving {
+    0% { background-position: 0 ; }
+    20% { background-position: 30% 0; }
+    100% { background-position: 200vw ; }
+    80% {background-position: 30% 0; }
+    100% { background-position: 0 ; }
+  } */
+
+  nav{
+    font-family: 'Ubuntu', sans-serif;
+    z-index: -2;
+    display: flex;
+    padding: 0.7% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+  }
+  nav:hover{
+    background-color: rgb(68, 63, 0);
+  }
+  span{
+    font-weight:500;
+    font-size: 25px;
+    padding-left: 2%;
+  }
+  span::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    transition: 1s;
+    background-color:rgb(255, 222, 0) ;
+  }
+  span:hover::after{
+    width: 100%;
+  }
+  span a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  img{
+    width: 55px;
+  }
+  .nav-link{
+    flex:1;
+    text-align: right;
+  }
+  .nav-link ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+
+  }
+  .nav-link ul li::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    transition: 1s;
+    background-color:rgb(255, 222, 0) ;
+  }
+  .nav-link ul li:hover::after{
+    width: 100%;
+  }
+  .nav-link ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .container{
+    /*    z-index:-1 ;*/
+    border-radius: 5px;
+    text-align: center;
+    border:1px solid rgba(13, 158, 0, 0.82);
+    border-bottom-color: rgba(0, 171, 255, 0.16);
+    border-right-color: rgba(0, 171, 255, 0.1);
+    position: absolute;
+    display: flex;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    align-items: center;
+    width: 347px;
+    height: 240px;
+    background-color: rgba(33,33,33,0.1);
+    backdrop-filter: blur(1.7px);
+    box-shadow: 3px 3px 19px rgba(0, 0, 0, 0.3);
+  }
+
+  #div1{
+    padding-top: 20px;
+    text-align: center;
+  }
+  #btn{
+    /* text-align: center; */
+    outline: none;
+    /*    transition-duration: 1000ms;*/
+    border: none;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+    border-radius: 19px;
+    padding: 7px 33px;
+    background-color: rgb(255, 255, 255);
+  }
+  #btn:hover{
+    transition-duration: 350ms;
+    border-radius: 11px;
+    color: green;
+    box-shadow: 3px 3px 9px -5px rgb(0, 0, 0);
+  }
+  #btn:focus{
+    transition-duration: 350ms;
+    border-radius: 5px;
+    color: rgb(255, 84, 0);
+  }
+  #btn2{
+    /* text-align: center; */
+    outline: none;
+    /*    transition-duration: 1000ms;*/
+    border: none;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+    border-radius: 19px;
+    padding: 7px 33px;
+    background-color: rgb(255, 255, 255);
+  }
+  #btn2:hover{
+    transition-duration: 350ms;
+    border-radius: 11px;
+    color: green;
+    box-shadow: 3px 3px 9px -5px rgb(0, 0, 0);
+  }
+  #btn2:focus{
+    transition-duration: 350ms;
+    border-radius: 5px;
+    color: rgb(206, 97, 215);
+  }
+
+  /* @keyframes btnglow {
+    0% { background-color: rgb(255, 255, 255); }
+    50% { background-color: rgba(255, 255, 255,0.8); }
+    100% { background-color: rgb(255, 255, 255); }
+  } */
+
+  /*button2*/
+
+
+  /*
+  #btn2:hover{
+
+  border: none;
+
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  border-radius: 4px;
+  padding: 7px 113px;
+  background-color: rgb(230, 33, 23);
+}
+*/
+
+div form h1{
+  color: aliceblue;
+  font-family: monospace;
+  font-size: 45px;
+}
+
+/*
+@media(max-width:500px){
+.container{
+width: 1057px;
+height: 540px;
+padding: 50px;
+border-radius: 55px;
+}
+#div1{
+padding-top:90px;
+}
+#btn{
+font-size: 57px;
+border-radius: 19px;
+}
+div form h1{
+font-size: 100px;
+}
+#btn2{
+border-radius: 19px;
+font-size: 57px;
+}
+
+span{
+font-size: 45px;
+padding-left: 2%;
+}
+
+img{
+width: 105px;
+}
+
+.nav-link ul li a{
+color: aliceblue;
+text-decoration: none;
+font-size: 45px;
+}
+}*/
