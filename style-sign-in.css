@@ -12,6 +12,16 @@
     min-height: 100vh;
     min-width: 100vw;
   }
+  #spanloading{
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    display:inline-block;
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   #loader{
     position: fixed;
     width: 100vw;

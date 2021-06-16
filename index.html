@@ -3,15 +3,19 @@
 <head>
   <meta name="viewport" content="width=device-width initial-scale=1">
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Sub to unlock index</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Google font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body >
-  <div id="loader"></div>
+  <div style="background: #211f25 url('image/coffiecup.gif') no-repeat center;" id="loader">
+    <span id="spanloading">Loading...</span>
+  </div>
   <div id="sec1">
     <nav>
       <a href='unlock%20link.html'><img src="image/logo.jpg" alt="no img"></a>
@@ -36,15 +40,19 @@
       </form>
     </div>
   </div>
-  <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
+  <!-- all scripts starts here -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-$(window).on("load",function(){
-  $("#loader").fadeOut("normal");
-})
+  $("#loader").delay(1500);
+  $(window).on("load",function(){
+    $("#loader").fadeOut("slow");
+  })
   // var loader = document.getElementById('loader');
   // function loaded(){
   //   loader.style.display = 'none';
   // }
+
   var btn = document.getElementById('btn');
   var btn2 = document.getElementById('btn2');
 

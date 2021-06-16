@@ -6,11 +6,14 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="style-sign-in.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body onload="loaded()">
-    <div id="loader"></div>
+  <div id="loader">
+    <span id="spanloading">Loading...</span>
+  </div>
   <div id="sec1">
     <nav>
       <a href='unlock%20link.html'><img src="image/Untitled-1.png" alt="no img"></a>
@@ -36,26 +39,34 @@
       </form>
     </div>
   </div>
+
+  <!-- scripts starts here -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
   <!-- <script>
   var btn = document.getElementById('btn');
   var btn2 = document.getElementById('btn2');
 
   btn.onclick = function(){
-    window.open('https://www.youtube.com/channel/UCGFFUcAJp7d8crRm7k-WmHw?sub_confirmation=1','_blank');
-    setTimeout(function(){
-      btn2.disabled=false;
-      btn2.style.background="rgb(11, 159, 11)";
-      btn2.style.cursor="pointer";
-    },11000);
-  }
+  window.open('https://www.youtube.com/channel/UCGFFUcAJp7d8crRm7k-WmHw?sub_confirmation=1','_blank');
+  setTimeout(function(){
+  btn2.disabled=false;
+  btn2.style.background="rgb(11, 159, 11)";
+  btn2.style.cursor="pointer";
+},11000);
+}
 
-  </script> -->
-  <script>
-  var loader = document.getElementById('loader');
-  function loaded(){
-    loader.style.display = 'none';
-  }
-  </script>
+</script> -->
+<script>
+$("#loader").delay(1500);
+$(window).on("load",function(){
+  $("#loader").fadeOut("slow");
+})
+// var loader = document.getElementById('loader');
+// function loaded(){
+//   loader.style.display = 'none';
+// }
+</script>
 </body>
 </html>
