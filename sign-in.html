@@ -9,7 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="loaded()">
+    <div id="loader"></div>
   <div id="sec1">
     <nav>
       <a href='unlock%20link.html'><img src="image/Untitled-1.png" alt="no img"></a>
@@ -50,5 +51,11 @@
   }
 
   </script> -->
+  <script>
+  var loader = document.getElementById('loader');
+  function loaded(){
+    loader.style.display = 'none';
+  }
+  </script>
 </body>
 </html>

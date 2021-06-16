@@ -7,9 +7,11 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body >
+  <div id="loader"></div>
   <div id="sec1">
     <nav>
       <a href='unlock%20link.html'><img src="image/logo.jpg" alt="no img"></a>
@@ -36,6 +38,13 @@
   </div>
   <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
   <script>
+$(window).on("load",function(){
+  $("#loader").fadeOut("normal");
+})
+  // var loader = document.getElementById('loader');
+  // function loaded(){
+  //   loader.style.display = 'none';
+  // }
   var btn = document.getElementById('btn');
   var btn2 = document.getElementById('btn2');
 

@@ -6,15 +6,23 @@
   body{
     background:url("image/123.gif");
     background-size: cover;
-    animation: moving 17s linear infinite;
+    animation: moving 85s linear infinite;
     /*    background-color: rgb(14, 14, 14);*/
     min-height: 100vh;
     min-width: 100vw;
   }
 
+  #loader{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #fff url("image/Preloader_8.gif") no-repeat center;
+    z-index: 999;
+  }
+
   @keyframes moving {
     0% { background-position: 0 0; }
-    100% { background-position: 200vw 0 ; }
+    100% { background-position: 1000vw 0 ; }
   }
   nav{
     font-family: 'Ubuntu', sans-serif;
