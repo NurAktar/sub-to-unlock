@@ -16,7 +16,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: #fff url("image/Preloader_8.gif") no-repeat center;
+    background: #211f25 url("image/coffiecup.gif") no-repeat center;
     z-index: 999;
   }
 
