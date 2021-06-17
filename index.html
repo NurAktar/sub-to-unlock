@@ -9,10 +9,17 @@
   <!-- Google font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body >
+  <div class="bg-animation">
+
+  </div>
   <div style="background: #211f25 url('image/coffiecup.gif') no-repeat center;" id="loader">
     <span id="spanloading">Loading...</span>
   </div>
@@ -20,12 +27,14 @@
     <nav>
       <a href='unlock%20link.html'><img src="image/logo.jpg" alt="no img"></a>
       <span><a href="unlock%20link.html">Techno Focus</a></span>
-      <div class="nav-link">
+      <div class="nav-link" id="navLink">
+      <i class="fas fa-times-circle" onclick="hidemenu()"></i>
         <ul>
           <li><a href="sign-in.html">Sign In</a></li>
           <li><a href="about_us.html">About</a></li>
         </ul>
       </div>
+      <i class="fas fa-bars" onclick="showmenu()"></i>
     </nav>
 
     <div class="container">
@@ -52,6 +61,10 @@
   // function loaded(){
   //   loader.style.display = 'none';
   // }
+  //hide menu and show menu
+  var navLink = document.getElementById("navLink");
+  function showmenu(){ navLink.style.right = "0"; }
+  function hidemenu(){ navLink.style.right = "-300px"; }
 
   var btn = document.getElementById('btn');
   var btn2 = document.getElementById('btn2');
@@ -64,7 +77,6 @@
       btn2.style.cursor="pointer";
     },11000);
   }
-
   </script>
 </body>
 </html>
