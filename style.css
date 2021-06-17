@@ -171,6 +171,9 @@ div form h1{
 }
 
 @media screen and (max-width: 700px){
+  nav{
+    height: 71px;
+  }
   nav .fas{
     display:block;
   }
@@ -188,8 +191,8 @@ div form h1{
     height: 100vh;
     width: 50%;
     background-color: rgba(0, 0, 0, 0.64);
-    top: 68px;
-    right: -300px;
+    top: 71px;
+    right: -51%;
     text-align: left;
     padding: 22px;
   }
