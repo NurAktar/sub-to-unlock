@@ -28,13 +28,18 @@
       <a href='unlock%20link.html'><img src="image/logo.jpg" alt="no img"></a>
       <span><a href="unlock%20link.html">Techno Focus</a></span>
       <div class="nav-link" id="navLink">
-        <i class="fas fa-times-circle" onclick="hidemenu()"></i>
+        <!-- <i class="fas fa-times-circle" onclick="hidemenu()"></i> -->
         <ul>
           <li><a href="sign-in.html">Sign In</a></li>
           <li><a href="about_us.html">About</a></li>
         </ul>
       </div>
-      <i class="fas fa-bars" onclick="showmenu()"></i>
+      <div class="BURGER" id="burger" onclick="menubtn()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <!-- <i class="fas fa-bars" onclick="showmenu()"></i> -->
     </nav>
 
     <div class="container">
@@ -63,8 +68,8 @@
   // }
   //hide menu and show menu
   var navLink = document.getElementById("navLink");
-  function showmenu(){ navLink.style.right = "0"; }
-  function hidemenu(){ navLink.style.right = "-51%"; }
+  // function showmenu(){ navLink.style.right = "0"; }
+  // function hidemenu(){ navLink.style.right = "-51%"; }
 
   var btn = document.getElementById('btn');
   var btn2 = document.getElementById('btn2');
@@ -77,6 +82,16 @@
       btn2.style.cursor="pointer";
     },11000);
   }
+  // burger toggle // menubar
+  var burger = document.getElementById("burger");
+  function menubtn(){
+    navLink.classList.toggle('panal');
+    burger.classList.toggle('toggle');
+  }
+  $(function(){setTimeout(function () {
+    navLink.classList.toggle('panal');
+  }, 3500);});
+
   </script>
 </body>
 </html>

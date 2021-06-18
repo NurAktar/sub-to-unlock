@@ -170,6 +170,25 @@ div form h1{
 
 }
 
+.BURGER div{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: rgb(255, 208, 255);
+}
+
+.toggle .line1{
+  background-color: yellow;
+  transform: rotate(45deg) translate(4px,7px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+    background-color: yellow;
+  transform: rotate(-45deg) translate(4px,-7px);
+}
+
 @media screen and (max-width: 700px){
   nav{
     height: 71px;
@@ -192,8 +211,11 @@ div form h1{
     width: 50%;
     background-color: rgba(0, 0, 0, 0.64);
     top: 71px;
-    right: -51%;
+    right: 0;
     text-align: left;
     padding: 22px;
+  }
+  .panal{
+    right: -51%;
   }
 }
