@@ -176,7 +176,7 @@ div form h1{
   width: 25px;
   height: 3px;
   margin: 5px;
-  background-color:rgb(255, 226, 248);
+  background-color:aliceblue;
 }
 
 .toggle .line1{
@@ -221,6 +221,19 @@ div form h1{
     padding: 22px;
   }
   .panal{
+    opacity: 0;
     right: -51%;
+  }
+  .panal ul li:first-child{
+    opacity: 0;
+    transform: translateX(105px);
+  }
+  .panal ul li:nth-child(2){
+    opacity: 0;
+    transform: translateX(205px);
+  }
+  .panal ul li:last-child{
+    opacity: 0;
+    transform: translateX(305px);
   }
 }

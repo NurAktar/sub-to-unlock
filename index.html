@@ -29,7 +29,8 @@
       <span><a href="unlock%20link.html">Techno Focus</a></span>
       <div class="nav-link" id="navLink">
         <!-- <i class="fas fa-times-circle" onclick="hidemenu()"></i> -->
-        <ul>
+        <ul id="navlist">
+          <li><a href="#">Home</a></li>
           <li><a href="sign-in.html">Sign In</a></li>
           <li><a href="about_us.html">About</a></li>
         </ul>
@@ -87,10 +88,16 @@
   function menubtn(){
     navLink.classList.toggle('panal');
     burger.classList.toggle('toggle');
+
   }
+
+
+
   $(function(){setTimeout(function () {
     navLink.classList.toggle('panal');
   }, 3500);});
+
+
 
   </script>
 </body>
