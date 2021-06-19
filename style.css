@@ -169,12 +169,14 @@ div form h1{
   font-size: 45px;
 
 }
-
+.BURGER{
+  display: none;
+}
 .BURGER div{
   width: 25px;
   height: 3px;
   margin: 5px;
-  background-color: rgb(255, 208, 255);
+  background-color:rgb(255, 226, 248);
 }
 
 .toggle .line1{
@@ -190,6 +192,9 @@ div form h1{
 }
 
 @media screen and (max-width: 700px){
+  .BURGER{
+    display:block;
+  }
   nav{
     height: 71px;
   }
