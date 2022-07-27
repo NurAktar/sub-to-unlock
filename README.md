@@ -1,5 +1,5 @@
 # sub-to-unlock
-This is a open source project for make better flexible web design. So you can easily do the job quickly.
+Project for a platform to built a link unlock system. You have to perform a task(like|share|subscribe) to unlock the shared files by the content creator. 
 
 // Hosted links -
 https://nuraktar.github.io/sub-to-unlock
